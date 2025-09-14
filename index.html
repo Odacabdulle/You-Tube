@@ -120,7 +120,7 @@
             <h1 class="text-[#1E1E1E] text-2xl sm:text-2xl">All</h1>
         </div>
         <div
-            class="absolute sm:top-25 top-25 sm:left-[18%] left-[20%] bg-white rounded-md sm:w-[10%]  sm:h-[40px]  w-[100px] text-center">
+            class="absolute sm:top-25 top-25 sm:left-[18%] left-[25%] bg-white rounded-md sm:w-[10%]  sm:h-[40px]  w-[100px] text-center">
             <h1 class="text-[#1E1E1E] text-2xl sm:text-3xl">Podcasts</h1>
         </div>
         <div
@@ -141,12 +141,19 @@
     </div>
     <!-- video -->
     <div class="flex-col sm:flex-row p-4 items-center">
-        <div class="w-[300px] sm:w-[300px] sm:top-40 absolute sm:left-[12%]  top-40 left-6">
+      <div>
+          <div class="w-[300px] sm:w-[300px] sm:top-40 absolute sm:left-[12%]  top-40 left-6">
             <iframe width="350" height="215" src="https://www.youtube.com/embed/k-T-Q2MaJ4k?si=FgW5QJvdH769pnuZ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+        <div class="flex">
+            <div>
+                <img class="w-[30px] h-[30px] rounded-full" src="image/shikh.png" alt="">
+            </div>
+        </div>
+      </div>
         <div class="w-[300px]  sm:w-[300px] sm:top-40 absolute sm:left-[37%] top-100 left-6">
             <iframe width="350" height="215" src="https://www.youtube.com/embed/MTYyEI59CJw?si=WRsGQyCV8w8iwDag"
                 title="YouTube video player" frameborder="0"
@@ -240,12 +247,13 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="flex gap-5 mt-[-20px] px-7 items-center text-center  sm:hidden  fixed bottom-0">
-        <div class="mt-8 items-center text-center">
+    <div
+        class="flex gap-5 mt-[-20px] px-5 items-center text-center  sm:hidden bg-black shadow-sm border-t border-white   fixed bottom-0">
+        <div class="mt-8 items-center text-center mt-[10px]">
             <i class="fa-solid fa-house"></i>
             <p>Home</p>
         </div>
-        <div class="mt-8 items-center text-center">
+        <div class="mt-8 items-center text-center mt-[10px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <g fill="none">
                     <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
@@ -256,18 +264,20 @@
             </svg>
             <p>Shorts</p>
         </div>
-        <div class="mt-8 bg-[#1E1E1E] w-[50px] items-center text-center h-[40px] rounded-full">
+        <div class="mt-8 bg-[#1E1E1E] w-[60px] items-center text-center h-[60px] rounded-full mt-[10px] ml-1">
 
-            <p class="text-3xl">+</p>
+            <p class="text-5xl text-center ml-1 ">+</p>
         </div>
-        <div class="mt-8 items-center text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="left-[40px]">
-                <path fill="currentColor"
-                    d="M4 22q-.825 0-1.412-.587T2 20V10q0-.825.588-1.412T4 8h16q.825 0 1.413.588T22 10v10q0 .825-.587 1.413T20 22zm0-2h16V10H4zm6-1l6-4l-6-4zM4 7V5h16v2zm3-3V2h10v2zM4 20V10z" />
-            </svg>
+        <div class="mt-8 items-center text-center mt-[10px]">
+            <div class="ml-7">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="left-[40px]">
+                    <path fill="currentColor"
+                        d="M4 22q-.825 0-1.412-.587T2 20V10q0-.825.588-1.412T4 8h16q.825 0 1.413.588T22 10v10q0 .825-.587 1.413T20 22zm0-2h16V10H4zm6-1l6-4l-6-4zM4 7V5h16v2zm3-3V2h10v2zM4 20V10z" />
+                </svg>
+            </div>
             <p>Subscriptions</p>
         </div>
-        <div class="mt-8">
+        <div class="mt-8 mt-[10px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M16 10c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4" />
                 <path fill="currentColor" fill-rule="evenodd"
